@@ -1,12 +1,17 @@
 @import url(../font/fonts.css);
+@import url(media.css);
+
+
 
 :root {
     --main-color: #191A23;
+    --color-white: #fff;
     --background-first: #F3F3F3;
     --background-second: #B9FF66;
     --background-body: rgba(255, 255, 255, 1);
 
     --padding: 50px;
+    --padding-button: 20px 35px;
 
     --border: 1px solid #191A23;
 
@@ -21,6 +26,8 @@
 
     --font-family-main: 'SpaceGrotesk-Regular';
     --font-family-main-heading: "SpaceGrotesk-Medium";
+
+    --transition: 0.2s;
 }
 
 html {
@@ -46,4 +53,59 @@ ul {
     font-size: var(--font-size-main);
     font-family: var(--font-family-main), sans-serif;
     background-color: var(--background-body);
+    transition: var(--transition);
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.button {
+    padding: var(--padding-button);
+    color: var(--color-white);
+    background-color: var(--main-color);
+    border-radius: var(--border-radius-button);
+    transition: var(--transition);
+}
+
+.header {
+    margin: 60px 0 70px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+}
+
+.menu__list {
+    display: flex;
+    gap: 0 40px;
+}
+
+.menu__link:hover {
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.header__link {
+    display: inline-block;
+    color: var(--main-color);
+    background-color: var(--color-white);
+    border: var(--border);
+}
+
+
+
+.header__link:hover {
+    color: var(--color-white);
+    background-color: var(--main-color);
 }
