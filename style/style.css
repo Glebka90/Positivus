@@ -4,11 +4,12 @@
 
 
 :root {
-    --main-color: #191A23;
+    --color-dark-broun: #191A23;
+    --color-black: #000;
     --color-white: #fff;
     --background-first: #F3F3F3;
     --background-second: #B9FF66;
-    --background-body: rgba(255, 255, 255, 1);
+
 
     --padding: 50px;
     --padding-button: 20px 35px;
@@ -23,6 +24,7 @@
     --font-size-main: 18px;
     --font-size-second: 20px;
     --font-size-section-heading: 40px;
+    --font-weight-body: 400;
 
     --font-family-main: 'SpaceGrotesk-Regular';
     --font-family-main-heading: "SpaceGrotesk-Medium";
@@ -52,7 +54,9 @@ ul {
 .body {
     font-size: var(--font-size-main);
     font-family: var(--font-family-main), sans-serif;
-    background-color: var(--background-body);
+    font-weight: var(--ffont-weight-body);
+    font-style: normal;
+    color: var(--color-dark-broun);
     transition: var(--transition);
 }
 
@@ -65,9 +69,13 @@ ul {
 .button {
     padding: var(--padding-button);
     color: var(--color-white);
-    background-color: var(--main-color);
+    font-family: var(--font-family-main);
+    font-size: var(--font-size-second);
+    background-color: var(--color-dark-broun);
     border-radius: var(--border-radius-button);
     transition: var(--transition);
+    border: none;
+    cursor: pointer;
 }
 
 .header {
@@ -93,7 +101,7 @@ ul {
 
 .menu__link:hover {
     padding-bottom: 3px;
-    border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--color-black);
 }
 
 .header__link {
@@ -107,5 +115,36 @@ ul {
 
 .header__link:hover {
     color: var(--color-white);
-    background-color: var(--main-color);
+    background-color: var(--color-dark-broun);
+}
+
+.heading__block {
+    max-width: 530px;
+
+}
+
+.heading__inner {
+    display: flex;
+}
+
+.heading__title {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 77px;
+}
+
+.description-title {
+    margin: 35px 0;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.clients__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients__image {
+    margin: 70px 0 140px;
+    filter: grayscale(1);
 }
