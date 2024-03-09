@@ -170,6 +170,11 @@ h2 {
 .clients__image {
     margin: 70px 0 140px;
     filter: grayscale(1);
+    transition: var(--transition);
+}
+
+.clients__image:hover {
+    filter: none;
 }
 
 .service__heading-block {
@@ -366,6 +371,7 @@ h2 {
     margin: 0 64px;
     background-color: var(--color-white);
 }
-.wrapper__icon--end{
+
+.wrapper__icon--end {
     align-items: flex-end;
 }
