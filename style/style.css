@@ -70,6 +70,10 @@ h2 {
     gap: 0 40px;
 }
 
+.wrapper-icon {
+    transition: var(--transition);
+}
+
 .body {
     font-size: var(--font-size-main);
     font-family: var(--font-family-main), sans-serif;
@@ -228,14 +232,11 @@ h2 {
 
 }
 
-
-
 .service-card-body__link {
     display: flex;
     align-items: center;
     gap: 0 15px;
     cursor: pointer;
-
 }
 
 
@@ -364,4 +365,7 @@ h2 {
     height: 185px;
     margin: 0 64px;
     background-color: var(--color-white);
+}
+.wrapper__icon--end{
+    align-items: flex-end;
 }
