@@ -20,6 +20,8 @@
 
     --border-radius-card: 45px;
     --border-radius-button: 14px;
+    --border-radius-text: 7px;
+
 
     --font-size-main: 18px;
     --font-size-second: 20px;
@@ -62,13 +64,7 @@ h2 {
     text-align: center;
 }
 
-h3 {
-    width: 207px;
-    height: 38px;
-    font-family: var(--font-family-main-heading);
-    font-size: 30px;
-    line-height: 38px;
-}
+
 
 .body {
     font-size: var(--font-size-main);
@@ -178,17 +174,20 @@ h3 {
     max-width: 580px;
     line-height: 23px;
 }
-.cards{
+
+.cards {
     margin: 80px 0 100px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
+
 }
+
 .service-card {
-    max-width: 600px;
     height: 310px;
     display: flex;
+    flex-basis: 600px;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
@@ -206,13 +205,78 @@ h3 {
     justify-content: space-between;
 }
 
-.service-card-body__link-icon {
-    padding: 10px;
-    background-color: var(--color-black);
-    border-radius: 50%;
+.service-card-body__title {
+    padding: 0 3px;
+    font-family: var(--font-family-main-heading);
+    font-size: 30px;
+    line-height: 38px;
+    border-radius: var(--border-radius-text);
 }
-.service-card-body__link{
+
+.wrapper-icon {
+    width: 41px;
+    height: 41px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--color-black);
+
+}
+
+
+
+.service-card-body__link {
     display: flex;
     align-items: center;
     gap: 0 15px;
+    cursor: pointer;
+
+}
+
+
+.service-card-body__link-text {
+    color: var(--color-black);
+}
+
+.service-card-body__title--bg-green {
+    background-color: var(--background-second);
+}
+
+.service-card--bg-green {
+    background-color: var(--background-second);
+}
+
+.service-card--bg-black {
+    background-color: var(--color-black);
+}
+
+.service-card-body__title--bg-white {
+    background-color: var(--background-first);
+}
+
+.service-card-body__title--bg-black {
+    background-color: var(--background-first);
+}
+
+.service-card-body__link {
+    color: var(--background-first);
+    transition: var(--transition);
+}
+
+.service-card-body__link:hover>.wrapper-icon {
+
+    background-color: #505050;
+}
+
+.wrapper-icon--bg-white {
+    background-color: var(--background-first);
+}
+
+.wrapper-icon--bg-white svg path {
+    fill: var(--color-black)
+}
+
+.service-card-body__link-text--col-black {
+    color: var(--color-white);
 }
