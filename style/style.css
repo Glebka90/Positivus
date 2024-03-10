@@ -375,3 +375,117 @@ h2 {
 .wrapper__icon--end {
     align-items: flex-end;
 }
+
+.wroking-process__inner {
+    margin: 80px 0 140px;
+}
+
+
+
+/* acordion */
+.acordion__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+}
+
+.acordion__item {
+    max-width: 100%;
+    min-height: 160px;
+    padding: 0 60px;
+    position: relative;
+    border: var(--border);
+    border-radius: var(--border-radius-card);
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-gray);
+    transition: var(--transition);
+}
+
+.acordion__trigger {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.acordion__heading {
+    padding: 40px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.acordion__title {
+    font-family: var(--font-family-main-heading);
+    font-size: 30px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    gap: 0 25px;
+}
+
+.acordion__number {
+    font-family: var(--font-family-main-heading);
+    font-size: 60px;
+    line-height: 77px;
+
+}
+
+.acordion__button {
+    width: 58px;
+    height: 58px;
+    position: relative;
+    display: inline-block;
+    border: var(--border);
+    background-color: var(--color-white);
+    border-radius: 50%;
+
+}
+
+.acordion__button span {
+    width: 17px;
+    height: 5px;
+    display: inline-block;
+    background-color: var(--color-black);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.acordion__button span::after {
+    content: '';
+    width: 17px;
+    height: 5px;
+    display: inline-block;
+    background-color: var(--color-black);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    transition: var(--transition);
+}
+
+.acordion__content {
+    padding: 30px 0 40px;
+    border-top: var(--border);
+    display: none;
+}
+
+.acordion__trigger:checked~.acordion__content {
+    display: block;
+
+}
+
+.acordion__trigger:checked~* span::after {
+    transform: translate(-50%, -50%) rotate(180deg);
+
+}
+
+.active {
+    background: var(--background-second);
+}
+
+/* acordion */
