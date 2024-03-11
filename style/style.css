@@ -489,3 +489,56 @@ h2 {
 }
 
 /* acordion */
+.team__list {
+    margin: 80px 0 210px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.team__item {
+    width: 386px;
+    height: 331px;
+    padding: 40px 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: var(--border);
+    border-radius: var(--border-radius-card);
+    box-shadow: var(--box-shadow);
+}
+
+.team__header {
+    width: 100%;
+    padding-bottom: 28px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    gap: 0 20px;
+}
+
+.team__name {
+    font-family: var(--font-family-main-heading);
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.team__skill {
+    font-family: var(--font-family-main);
+    line-height: 23px;
+    font-size: 18px;
+}
+
+.team__icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.team__description {
+    padding-top: 28px;
+    border-top: var(--border);
+    line-height: 23px;
+   
+
+}
