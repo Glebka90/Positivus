@@ -22,10 +22,12 @@
     --border-radius-button: 14px;
     --border-radius-text: 7px;
 
-
     --font-size-main: 18px;
     --font-size-second: 20px;
-    --font-size-section-heading: 40px;
+    --font-size-third: 30px;
+    --font-size-heading: 40px;
+    --font-size-big: 60px;
+
     --font-weight-body: 400;
 
     --font-family-main: 'SpaceGrotesk-Regular';
@@ -57,7 +59,7 @@ h2 {
     padding: 0 3px;
     border-radius: 7px;
     font-weight: 500;
-    font-size: 40px;
+    font-size: var(--font-size-heading);
     line-height: 51px;
     background: var(--background-second);
     text-align: center;
@@ -152,13 +154,13 @@ h2 {
 
 .heading__title {
     font-weight: 500;
-    font-size: 60px;
+    font-size: var(--font-size-big);
     line-height: 77px;
 }
 
 .description-title {
     margin: 35px 0;
-    font-size: 20px;
+    font-size: var(--font-size-second);
     line-height: 28px;
 }
 
@@ -221,7 +223,7 @@ h2 {
 .service-card-body__title {
     padding: 0 3px;
     font-family: var(--font-family-main-heading);
-    font-size: 30px;
+    font-size: var(--font-size-third);
     line-height: 38px;
     border-radius: var(--border-radius-text);
 }
@@ -307,7 +309,7 @@ h2 {
 
 .banner-section__title {
     font-family: var(--font-family-main-heading);
-    font-size: 30px;
+    font-size: var(--font-size-third);
     line-height: 38px;
 }
 
@@ -347,7 +349,7 @@ h2 {
 
 .case-card__text {
     max-width: 285px;
-    font-size: 18px;
+    font-size: var(--font-size-main);
     line-height: 23px;
 }
 
@@ -418,7 +420,7 @@ h2 {
 
 .acordion__title {
     font-family: var(--font-family-main-heading);
-    font-size: 30px;
+    font-size: var(--font-size-third);
     line-height: 38px;
     display: flex;
     align-items: center;
@@ -427,7 +429,7 @@ h2 {
 
 .acordion__number {
     font-family: var(--font-family-main-heading);
-    font-size: 60px;
+    font-size: var(--font-size-heading);
     line-height: 77px;
 
 }
@@ -519,14 +521,14 @@ h2 {
 
 .team__name {
     font-family: var(--font-family-main-heading);
-    font-size: 20px;
+    font-size: var(--font-size-second);
     line-height: 26px;
 }
 
 .team__skill {
     font-family: var(--font-family-main);
     line-height: 23px;
-    font-size: 18px;
+    font-size: var(--font-size-main);
 }
 
 .team__icon {
@@ -539,6 +541,4 @@ h2 {
     padding-top: 28px;
     border-top: var(--border);
     line-height: 23px;
-   
-
 }
